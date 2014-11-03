@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akios</title>
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.2/themes/ui-lightness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+{% for js in page.scripts %}
+	<script type="text/javascript" src="js/{{js}}"></script>
+{% endfor %}
+</head>
+<body>
+{{ content }}
+</body>
+</html>
+
