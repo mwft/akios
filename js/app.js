@@ -155,5 +155,16 @@ var handlers = {
 			$(".camsPlayerBox", iFrameDoc).css({"width": "100%", "height": "auto"});
 		}	
 	},
+	"chaturbate.com": {
+		"start": function(url, $iframe) {
+			$iframe.attr("src", url);
+		},
+		"load": function(iFrameDoc) {
+			$("#vjs_video_3", iFrameDoc).css({"position" :"fixed", "top": "0px", "left":"0px", "width": "100%", "height": "auto", "z-index": 999})
+		},
+		"resize": function(iFrameDoc) {
+			$("#vjs_video_3", iFrameDoc).css({"width": "100%", "height": "auto"});
+		}
+	}
 }
 
